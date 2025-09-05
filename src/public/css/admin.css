@@ -1,0 +1,199 @@
+.title {
+    font-size: 28px;
+    margin: 24px 0
+}
+
+
+.search-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    margin-bottom: 14px
+}
+
+.search-row .name-input {
+    width: 280px
+}
+
+.search-row .match-select,
+.search-row .gender-select,
+.search-row .category-select {
+    width: 140px
+}
+
+.search-row .date-input {
+    width: 140px
+}
+
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px 16px;
+    border: 0;
+    border-radius: 4px;
+    background: #917f72;
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+    white-space: nowrap
+}
+
+.btn.secondary {
+    background: #bfb5ad
+}
+
+.btn.small {
+    padding: 6px 10px
+}
+
+.btn.ghost {
+    background: #fff;
+    color: #6d5b4d;
+    border: 1px solid #d8d2cd
+}
+
+.btn.ghost:hover {
+    background: #f7f4f2
+}
+
+/* テーブル */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    background: #fff
+}
+
+.table th,
+.table td {
+    border: 1px solid #e6e2df;
+    padding: 12px
+}
+
+.table thead th {
+    background: #d7c9be;
+    text-align: left
+}
+
+.center {
+    text-align: center
+}
+
+/* モーダル */
+.modal {
+    position: fixed;
+    inset: 0;
+    display: none;
+    z-index: 1000
+}
+
+.modal:target {
+    display: block
+}
+
+.modal__overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, .4)
+}
+
+.modal__content {
+    position: relative;
+    width: min(640px, 92%);
+    margin: 60px auto;
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, .15)
+}
+
+.modal__close {
+    position: absolute;
+    top: 8px;
+    right: 12px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #666
+}
+
+.detail-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 8px
+}
+
+.detail-table th,
+.detail-table td {
+    border: 1px solid #e6e2df;
+    padding: 10px;
+    vertical-align: top
+}
+
+.detail-table th {
+    width: 180px;
+    background: #f7f4f2;
+    text-align: left
+}
+
+.text-pre {
+    white-space: pre-wrap
+}
+
+.btn.danger {
+    background: #c65353
+}
+
+/* ▼ ページネーション　5つだけ */
+.pager-top {
+    display: flex;
+    justify-content: flex-end;
+    margin: 8px 0 12px
+}
+
+.pager-top .pagination {
+    display: flex;
+    gap: 6px;
+    list-style: none;
+    margin: 0;
+    padding: 0
+}
+
+.pager-top .pagination li {
+    list-style: none
+}
+
+.pager-top .pagination a,
+.pager-top .pagination span {
+    display: inline-block;
+    min-width: 28px;
+    padding: 6px 8px;
+    border: 1px solid #d8d2cd;
+    border-radius: 4px;
+    text-decoration: none;
+    background: #fff;
+    color: #6d5b4d;
+    font-size: 14px;
+    line-height: 1
+}
+
+.pager-top .pagination .active span {
+    background: #8f7f72;
+    border-color: #8f7f72;
+    color: #fff
+}
+
+.pager-top .pagination .disabled a {
+    pointer-events: none;
+    color: #b9b2ad;
+    background: #f7f4f2
+}
+
+
+.paginate svg {
+    width: 14px;
+    height: 14px;
+    vertical-align: -2px
+}

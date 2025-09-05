@@ -1,0 +1,42 @@
+.thanks-page {
+    position: relative;
+    text-align: center;
+    padding: 120px 0 160px;
+}
+
+.thanks-page::before {
+    content: "Thank you";
+    position: fixed;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 26vw;
+
+    font-weight: 600;
+    letter-spacing: .04em;
+    color: rgba(0, 0, 0, 0.05);
+    /* 薄く */
+    pointer-events: none;
+    /* 背景になる */
+    z-index: 0;
+}
+
+.thanks-message {
+    font-size: 22px;
+    margin-bottom: 16px;
+    position: relative;
+    z-index: 1;
+    /* 背景の文字より前にくる */
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 28px;
+    border-radius: 4px;
+    background: #8f7b6a;
+    color: #fff;
+    text-decoration: none;
+    position: relative;
+    z-index: 1;
+}

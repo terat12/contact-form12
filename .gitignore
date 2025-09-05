@@ -1,0 +1,3 @@
+
+# ignore MySQL runtime data
+/docker/mysql/data/
